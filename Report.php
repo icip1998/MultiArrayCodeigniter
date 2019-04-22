@@ -7,24 +7,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Report extends MY_Controller {
 
-	public function __construct()
-	{
-		parent::__construct();
-		//Do your magic here
-		// $this->auth->check_auth();
-		$this->load->model('adm/master/Vendor_model', 'Vendor_model');
-		$this->load->model('adm/variable_cost/master/Kategori_model', 'Kategori_model');
-		$this->load->model('adm/variable_cost/master/Sub_kategori_model', 'Sub_kategori_model');
-		$this->load->model('adm/variable_cost/transaksi/Report_model', 'Report_model');
-	}
-
-	public function index()
-	{
-		$this->page = "adm/variable_cost/transaksi/report/index";
-		$this->breadcrumb = "Home/Variable Cost/Transaksi/Variable Cost Report";
-		$this->layout();
-	}
-
 	/**
 	 * Ambil data dari
 	 */

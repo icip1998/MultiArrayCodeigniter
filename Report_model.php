@@ -7,11 +7,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Report_model extends CI_Model {
 
-    var $table = 'variable_cost';
-    var $column_order = array(null, 'vendor','variable_cost_category');
-    var $column_search = array('vendor');
-    var $order = array('id' => 'asc');
-
     public function __construct()
     {
         parent::__construct();
